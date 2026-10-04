@@ -24,6 +24,17 @@
       border-color: rgba(59, 130, 246, 0.4);
       transform: translateY(-4px);
     }
+    .skill-tag {
+      background: rgba(30, 41, 59, 0.7);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      transition: all 0.2s ease;
+    }
+    .skill-tag:hover {
+      background: rgba(59, 130, 246, 0.15);
+      border-color: rgba(59, 130, 246, 0.5);
+      transform: translateY(-2px);
+      color: #93c5fd;
+    }
   </style>
 </head>
 <body class="min-h-screen flex flex-col justify-between">
@@ -31,27 +42,30 @@
   <!-- NAVBAR -->
   <nav class="sticky top-0 z-50 bg-[#0b0f19]/80 backdrop-blur-md border-b border-slate-800/80">
     <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
-      <a href="#" class="text-xl font-bold text-white tracking-wide hover:text-blue-400 transition">Beyzanur E.</a>
+      <!-- Sol Üst: PC Emojisi -->
+      <a href="#" class="text-3xl hover:scale-110 transition-transform">💻</a>
+      
+      <!-- Menü Linkleri -->
       <div class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-300">
         <a href="#about" class="hover:text-blue-400 transition">HAKKIMDA</a>
         <a href="#projects" class="hover:text-blue-400 transition">PROJELER</a>
         <a href="#skills" class="hover:text-blue-400 transition">YETENEKLER</a>
+        <a href="#certificates" class="hover:text-blue-400 transition">SERTİFİKALAR</a>
         <a href="mailto:beyzaaemir@gmail.com" class="bg-blue-600 hover:bg-blue-500 text-white px-5 py-2.5 rounded-xl font-medium transition shadow-lg shadow-blue-500/20">İletişime Geç</a>
       </div>
     </div>
   </nav>
 
-  <!-- HERO SECTION -->
+  <!-- HERO / HAKKIMDA BÖLÜMÜ -->
   <header id="about" class="max-w-6xl mx-auto px-6 pt-24 pb-16">
     <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-blue-500/10 text-blue-400 border border-blue-500/20 mb-6">
-      <span class="w-2 h-2 rounded-full bg-blue-400 animate-pulse"></span> Bilgisayar Mühendisi
+      <span class="w-2 h-2 rounded-full bg-blue-400 animate-pulse"></span> Portfolyo
     </div>
-    <h1 class="text-4xl sm:text-6xl font-extrabold text-white tracking-tight mb-6">
-      Yapay Zekâ, Otonom Sistemler & <br class="hidden sm:inline" />
-      <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-indigo-300 to-purple-400">Yazılım Geliştirme</span>
+    <h1 class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight mb-6">
+      BEYZANUR EMİR | <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-indigo-300 to-purple-400">BİLGİSAYAR MÜHENDİSİ</span>
     </h1>
-    <p class="max-w-2xl text-lg text-slate-400 leading-relaxed mb-8">
-      Bilgisayar mühendisliği birikimimle; derin öğrenme, bilgisayarla görme ve otonom sistemler alanlarında yenilikçi ve yüksek performanslı çözümler geliştiriyorum.
+    <p class="max-w-3xl text-base sm:text-lg text-slate-300 leading-relaxed mb-8">
+      Bilgisayar mühendisliği alanında aldığım eğitimle; yapay zekâ, otonom sistemler ve yazılım geliştirme konularında güçlü bir teknik birikime sahibim. Analitik düşünme ve problem çözme yeteneğimle, yenilikçi projelerde ve ArGe çalışmalarında aktif rol aldım. Takım çalışmasına yatkın, sürekli öğrenmeye açık bir mühendis olarak, teknik becerilerimi uygulayıp geliştirebileceğim yeni kariyer fırsatları arıyorum.
     </p>
     <div class="flex flex-wrap items-center gap-4">
       <a href="https://github.com/beyzaaemir17" target="_blank" class="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-slate-800 hover:bg-slate-700 text-white font-medium transition border border-slate-700">
@@ -63,7 +77,7 @@
     </div>
   </header>
 
-  <!-- PROJECTS SECTION -->
+  <!-- PROJELER BÖLÜMÜ -->
   <section id="projects" class="max-w-6xl mx-auto px-6 py-16">
     <div class="mb-12">
       <span class="text-xs uppercase tracking-widest text-blue-400 font-bold">Seçili Projeler</span>
@@ -72,7 +86,27 @@
 
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
       
-      <!-- Proje 1: AI Security Log Analyzer -->
+      <!-- Proje 1: Multipass Destekli Sanal Makine Yönetimi -->
+      <div class="glass-card rounded-2xl p-7 flex flex-col justify-between">
+        <div>
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span class="text-[11px] font-semibold px-2.5 py-1 rounded-md bg-blue-500/10 text-blue-300 border border-blue-500/20">MULTIPASS</span>
+            <span class="text-[11px] font-semibold px-2.5 py-1 rounded-md bg-emerald-500/10 text-emerald-300 border border-emerald-500/20">VIRTUALIZATION</span>
+            <span class="text-[11px] font-semibold px-2.5 py-1 rounded-md bg-cyan-500/10 text-cyan-300 border border-cyan-500/20">FULL STACK</span>
+          </div>
+          <h3 class="text-2xl font-bold text-white mb-3">Multipass Sanal Makine Yönetimi</h3>
+          <p class="text-slate-400 text-sm leading-relaxed mb-6">
+            Multipass altyapısını kullanarak Ubuntu sanal makinelerini (VM) merkezi olarak yöneten, başlatma, durdurma, izleme ve kaynak yapılandırma işlemlerini kolaylaştıran yönetim platformu.
+          </p>
+        </div>
+        <div class="pt-4 border-t border-slate-800/80 flex items-center justify-between">
+          <a href="https://github.com/beyzaaemir17/multipass_frontend" target="_blank" class="text-blue-400 hover:text-blue-300 text-sm font-medium inline-flex items-center gap-1.5 transition">
+            Repoyu Görüntüle <i data-lucide="external-link" class="w-4 h-4"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Proje 2: AI Security Log Analyzer -->
       <div class="glass-card rounded-2xl p-7 flex flex-col justify-between">
         <div>
           <div class="flex flex-wrap gap-2 mb-4">
@@ -92,27 +126,27 @@
         </div>
       </div>
 
-      <!-- Proje 2: Görüntü İşleme ile Hedef Atışı -->
+      <!-- Proje 3: Paketli Gıda Analizi (OCR & ML) -->
       <div class="glass-card rounded-2xl p-7 flex flex-col justify-between">
         <div>
           <div class="flex flex-wrap gap-2 mb-4">
-            <span class="text-[11px] font-semibold px-2.5 py-1 rounded-md bg-blue-500/10 text-blue-300 border border-blue-500/20">PYTHON</span>
-            <span class="text-[11px] font-semibold px-2.5 py-1 rounded-md bg-sky-500/10 text-sky-300 border border-sky-500/20">OPENCV</span>
-            <span class="text-[11px] font-semibold px-2.5 py-1 rounded-md bg-orange-500/10 text-orange-300 border border-orange-500/20">COMPUTER VISION</span>
+            <span class="text-[11px] font-semibold px-2.5 py-1 rounded-md bg-sky-500/10 text-sky-300 border border-sky-500/20">FLUTTER</span>
+            <span class="text-[11px] font-semibold px-2.5 py-1 rounded-md bg-amber-500/10 text-amber-300 border border-amber-500/20">ML KIT OCR</span>
+            <span class="text-[11px] font-semibold px-2.5 py-1 rounded-md bg-orange-500/10 text-orange-300 border border-orange-500/20">FIREBASE</span>
           </div>
-          <h3 class="text-2xl font-bold text-white mb-3">Görüntü İşleme ile Hedef Takibi</h3>
+          <h3 class="text-2xl font-bold text-white mb-3">Mobil OCR ile Paketli Gıda Analizi</h3>
           <p class="text-slate-400 text-sm leading-relaxed mb-6">
-            Kamera üzerinden gerçek zamanlı nesne tespiti, renk ve kontur analizi ile hedef koordinatlarını hesaplayarak yönelim ve tetikleme sağlayan otonom hedefleme sistemi.
+            Mobil kamera ile paketli gıda etiketlerini tarayarak içerik ve katkı maddelerini optik karakter tanıma (OCR) ile ayrıştıran, alerjen ve sağlık risk analizini kullanıcıya sunan mobil uygulama.
           </p>
         </div>
         <div class="pt-4 border-t border-slate-800/80 flex items-center justify-between">
-          <a href="https://github.com/beyzaaemir17/goruntu_isleme_hedef_atisi" target="_blank" class="text-blue-400 hover:text-blue-300 text-sm font-medium inline-flex items-center gap-1.5 transition">
+          <a href="https://github.com/beyzaaemir17" target="_blank" class="text-blue-400 hover:text-blue-300 text-sm font-medium inline-flex items-center gap-1.5 transition">
             Repoyu Görüntüle <i data-lucide="external-link" class="w-4 h-4"></i>
           </a>
         </div>
       </div>
 
-      <!-- Proje 3: Akıllı Staj Yönetim Sistemi -->
+      <!-- Proje 4: Akıllı Staj Yönetim Sistemi -->
       <div class="glass-card rounded-2xl p-7 flex flex-col justify-between">
         <div>
           <div class="flex flex-wrap gap-2 mb-4">
@@ -132,8 +166,8 @@
         </div>
       </div>
 
-      <!-- Proje 4: Cilt Kanseri Tespiti -->
-      <div class="glass-card rounded-2xl p-7 flex flex-col justify-between">
+      <!-- Proje 5: Cilt Kanseri Tespiti -->
+      <div class="glass-card rounded-2xl p-7 flex flex-col justify-between md:col-span-2">
         <div>
           <div class="flex flex-wrap gap-2 mb-4">
             <span class="text-[11px] font-semibold px-2.5 py-1 rounded-md bg-rose-500/10 text-rose-300 border border-rose-500/20">DEEP LEARNING</span>
@@ -155,29 +189,137 @@
     </div>
   </section>
 
-  <!-- SKILLS SECTION -->
+  <!-- YETENEKLER BÖLÜMÜ -->
   <section id="skills" class="max-w-6xl mx-auto px-6 py-16">
     <div class="mb-10">
       <span class="text-xs uppercase tracking-widest text-blue-400 font-bold">Teknik Yetkinlikler</span>
       <h2 class="text-3xl font-bold text-white mt-1">Araçlar ve Teknolojiler</h2>
     </div>
-    <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
-      <div class="glass-card rounded-xl p-5 text-center">
-        <div class="text-white font-semibold mb-1">Diller</div>
-        <p class="text-slate-400 text-xs">Python, C/C++, Dart, SQL</p>
+
+    <!-- Yetenek Etiketleri Vitrini -->
+    <div class="glass-card rounded-2xl p-8">
+      <div class="flex flex-wrap gap-3">
+        <span class="skill-tag px-4 py-2 rounded-xl text-sm font-medium text-slate-200">Flutter</span>
+        <span class="skill-tag px-4 py-2 rounded-xl text-sm font-medium text-slate-200">React.js</span>
+        <span class="skill-tag px-4 py-2 rounded-xl text-sm font-medium text-slate-200">SQL Server</span>
+        <span class="skill-tag px-4 py-2 rounded-xl text-sm font-medium text-slate-200">MySQL</span>
+        <span class="skill-tag px-4 py-2 rounded-xl text-sm font-medium text-slate-200">YOLOv8</span>
+        <span class="skill-tag px-4 py-2 rounded-xl text-sm font-medium text-slate-200">Nesne Tespiti</span>
+        <span class="skill-tag px-4 py-2 rounded-xl text-sm font-medium text-slate-200">Kali Linux</span>
+        <span class="skill-tag px-4 py-2 rounded-xl text-sm font-medium text-slate-200">Derin Öğrenme</span>
+        <span class="skill-tag px-4 py-2 rounded-xl text-sm font-medium text-slate-200">C# (Başlangıç)</span>
+        <span class="skill-tag px-4 py-2 rounded-xl text-sm font-medium text-slate-200">Python</span>
+        <span class="skill-tag px-4 py-2 rounded-xl text-sm font-medium text-slate-200">HTML/CSS</span>
+        <span class="skill-tag px-4 py-2 rounded-xl text-sm font-medium text-slate-200">.NET MVC Mimarisi</span>
+        <span class="skill-tag px-4 py-2 rounded-xl text-sm font-medium text-slate-200">OOP</span>
+        <span class="skill-tag px-4 py-2 rounded-xl text-sm font-medium text-slate-200">LLM</span>
+        <span class="skill-tag px-4 py-2 rounded-xl text-sm font-medium text-slate-200">Doğal Dil İşleme</span>
+        <span class="skill-tag px-4 py-2 rounded-xl text-sm font-medium text-slate-200">ROS2</span>
+        <span class="skill-tag px-4 py-2 rounded-xl text-sm font-medium text-slate-200">Gazebo</span>
+        <span class="skill-tag px-4 py-2 rounded-xl text-sm font-medium text-slate-200">Flutter-Dart Programlama</span>
       </div>
-      <div class="glass-card rounded-xl p-5 text-center">
-        <div class="text-white font-semibold mb-1">Yapay Zekâ</div>
-        <p class="text-slate-400 text-xs">PyTorch, OpenCV, YOLO, CNN</p>
+    </div>
+  </section>
+
+  <!-- SERTİFİKALAR BÖLÜMÜ -->
+  <section id="certificates" class="max-w-6xl mx-auto px-6 py-16">
+    <div class="mb-10">
+      <span class="text-xs uppercase tracking-widest text-blue-400 font-bold">Eğitim & Başarılar</span>
+      <h2 class="text-3xl font-bold text-white mt-1">Sertifikalar ve Belgeler</h2>
+    </div>
+    
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+      
+      <!-- 1 -->
+      <div class="glass-card rounded-xl p-6 flex flex-col justify-between">
+        <div>
+          <span class="text-[11px] font-semibold px-2.5 py-1 rounded-md bg-blue-500/10 text-blue-400 border border-blue-500/20">HAVACILIK</span>
+          <h4 class="text-white font-bold mt-3 text-base">İHA-0 / İHA-1 Drone Pilotluğu Sertifikası</h4>
+        </div>
+        <p class="text-slate-400 text-xs mt-3">İnsansız hava aracı uçuş dinamikleri ve pilotaj yetkinliği.</p>
       </div>
-      <div class="glass-card rounded-xl p-5 text-center">
-        <div class="text-white font-semibold mb-1">Robotik & Simülasyon</div>
-        <p class="text-slate-400 text-xs">ROS 2, Gazebo, SLAM, PID</p>
+
+      <!-- 2 -->
+      <div class="glass-card rounded-xl p-6 flex flex-col justify-between">
+        <div>
+          <span class="text-[11px] font-semibold px-2.5 py-1 rounded-md bg-purple-500/10 text-purple-300 border border-purple-500/20">BOĞAZİÇİ ENSTİTÜSÜ</span>
+          <h4 class="text-white font-bold mt-3 text-base">AR-GE Projeleri Eğitimi</h4>
+        </div>
+        <p class="text-slate-400 text-xs mt-3">Proje geliştirme, fonlama ve Ar-Ge süreçleri metodolojisi.</p>
       </div>
-      <div class="glass-card rounded-xl p-5 text-center">
-        <div class="text-white font-semibold mb-1">Yazılım & Çerçeveler</div>
-        <p class="text-slate-400 text-xs">Flutter, FastAPI, Git, Docker</p>
+
+      <!-- 3 -->
+      <div class="glass-card rounded-xl p-6 flex flex-col justify-between">
+        <div>
+          <span class="text-[11px] font-semibold px-2.5 py-1 rounded-md bg-rose-500/10 text-rose-300 border border-rose-500/20">HUAWEI</span>
+          <h4 class="text-white font-bold mt-3 text-base">Huawei Student Developers - Core Team</h4>
+        </div>
+        <p class="text-slate-400 text-xs mt-3">Geliştirici ekosistemi ve çekirdek takım liderliği.</p>
       </div>
+
+      <!-- 4 -->
+      <div class="glass-card rounded-xl p-6 flex flex-col justify-between">
+        <div>
+          <span class="text-[11px] font-semibold px-2.5 py-1 rounded-md bg-cyan-500/10 text-cyan-300 border border-cyan-500/20">ANBEAN KAMPÜS</span>
+          <h4 class="text-white font-bold mt-3 text-base">Engineering Week</h4>
+        </div>
+        <p class="text-slate-400 text-xs mt-3">Mühendislik uygulamaları ve sektör odaklı teknik oturumlar.</p>
+      </div>
+
+      <!-- 5 -->
+      <div class="glass-card rounded-xl p-6 flex flex-col justify-between">
+        <div>
+          <span class="text-[11px] font-semibold px-2.5 py-1 rounded-md bg-amber-500/10 text-amber-300 border border-amber-500/20">BORUSAN HOLDİNG</span>
+          <h4 class="text-white font-bold mt-3 text-base">Borusan Teknoloji Okulu</h4>
+        </div>
+        <p class="text-slate-400 text-xs mt-3">Endüstriyel teknoloji vizyonu ve inovasyon programı.</p>
+      </div>
+
+      <!-- 6 -->
+      <div class="glass-card rounded-xl p-6 flex flex-col justify-between">
+        <div>
+          <span class="text-[11px] font-semibold px-2.5 py-1 rounded-md bg-indigo-500/10 text-indigo-300 border border-indigo-500/20">TEI</span>
+          <h4 class="text-white font-bold mt-3 text-base">Havacılık Motorları Okulu</h4>
+        </div>
+        <p class="text-slate-400 text-xs mt-3">Havacılık motor sistemleri ve ileri mühendislik süreçleri.</p>
+      </div>
+
+      <!-- 7 -->
+      <div class="glass-card rounded-xl p-6 flex flex-col justify-between">
+        <div>
+          <span class="text-[11px] font-semibold px-2.5 py-1 rounded-md bg-emerald-500/10 text-emerald-300 border border-emerald-500/20">SİBERVATAN</span>
+          <h4 class="text-white font-bold mt-3 text-base">Beyaz Şapkalı Hacker Eğitimi</h4>
+        </div>
+        <p class="text-slate-400 text-xs mt-3">Sızma testleri, ağ güvenliği ve zafiyet analiz uygulamaları.</p>
+      </div>
+
+      <!-- 8 -->
+      <div class="glass-card rounded-xl p-6 flex flex-col justify-between">
+        <div>
+          <span class="text-[11px] font-semibold px-2.5 py-1 rounded-md bg-blue-500/10 text-blue-300 border border-blue-500/20">IBM SKILLSBUILD</span>
+          <h4 class="text-white font-bold mt-3 text-base">Üretken Yapay Zeka</h4>
+        </div>
+        <p class="text-slate-400 text-xs mt-3">Generative AI temelleri, istem mühendisliği ve LLM modelleri.</p>
+      </div>
+
+      <!-- 9 -->
+      <div class="glass-card rounded-xl p-6 flex flex-col justify-between">
+        <div>
+          <span class="text-[11px] font-semibold px-2.5 py-1 rounded-md bg-sky-500/10 text-sky-300 border border-sky-500/20">IBM SKILLSBUILD</span>
+          <h4 class="text-white font-bold mt-3 text-base">Cybersecurity and Data</h4>
+        </div>
+        <p class="text-slate-400 text-xs mt-3">Veri güvenliği, siber tehdit modelleme ve analitik süreçler.</p>
+      </div>
+
+      <!-- 10 -->
+      <div class="glass-card rounded-xl p-6 flex flex-col justify-between sm:col-span-2 lg:col-span-1">
+        <div>
+          <span class="text-[11px] font-semibold px-2.5 py-1 rounded-md bg-red-500/10 text-red-300 border border-red-500/20">AKBANK</span>
+          <h4 class="text-white font-bold mt-3 text-base">Introduction to Python Training</h4>
+        </div>
+        <p class="text-slate-400 text-xs mt-3">Temel ve orta seviye Python algoritmaları ve veri yapıları.</p>
+      </div>
+
     </div>
   </section>
 
