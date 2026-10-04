@@ -1,1 +1,199 @@
+<!DOCTYPE html>
+<html lang="tr" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beyzanur Emir | Bilgisayar Mühendisi</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    body {
+      background-color: #0b0f19;
+      color: #e2e8f0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    }
+    .glass-card {
+      background: rgba(17, 24, 39, 0.7);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      transition: all 0.3s ease;
+    }
+    .glass-card:hover {
+      border-color: rgba(59, 130, 246, 0.4);
+      transform: translateY(-4px);
+    }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col justify-between">
 
+  <!-- NAVBAR -->
+  <nav class="sticky top-0 z-50 bg-[#0b0f19]/80 backdrop-blur-md border-b border-slate-800/80">
+    <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+      <a href="#" class="text-xl font-bold text-white tracking-wide hover:text-blue-400 transition">Beyzanur E.</a>
+      <div class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-300">
+        <a href="#about" class="hover:text-blue-400 transition">HAKKIMDA</a>
+        <a href="#projects" class="hover:text-blue-400 transition">PROJELER</a>
+        <a href="#skills" class="hover:text-blue-400 transition">YETENEKLER</a>
+        <a href="mailto:beyzaaemir@gmail.com" class="bg-blue-600 hover:bg-blue-500 text-white px-5 py-2.5 rounded-xl font-medium transition shadow-lg shadow-blue-500/20">İletişime Geç</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <header id="about" class="max-w-6xl mx-auto px-6 pt-24 pb-16">
+    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-blue-500/10 text-blue-400 border border-blue-500/20 mb-6">
+      <span class="w-2 h-2 rounded-full bg-blue-400 animate-pulse"></span> Bilgisayar Mühendisi
+    </div>
+    <h1 class="text-4xl sm:text-6xl font-extrabold text-white tracking-tight mb-6">
+      Yapay Zekâ, Otonom Sistemler & <br class="hidden sm:inline" />
+      <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-indigo-300 to-purple-400">Yazılım Geliştirme</span>
+    </h1>
+    <p class="max-w-2xl text-lg text-slate-400 leading-relaxed mb-8">
+      Bilgisayar mühendisliği birikimimle; derin öğrenme, bilgisayarla görme ve otonom sistemler alanlarında yenilikçi ve yüksek performanslı çözümler geliştiriyorum.
+    </p>
+    <div class="flex flex-wrap items-center gap-4">
+      <a href="https://github.com/beyzaaemir17" target="_blank" class="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-slate-800 hover:bg-slate-700 text-white font-medium transition border border-slate-700">
+        <i data-lucide="github" class="w-5 h-5"></i> GitHub Profili
+      </a>
+      <a href="#projects" class="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-medium transition shadow-lg shadow-blue-500/20">
+        Projeleri İncele <i data-lucide="arrow-down" class="w-4 h-4"></i>
+      </a>
+    </div>
+  </header>
+
+  <!-- PROJECTS SECTION -->
+  <section id="projects" class="max-w-6xl mx-auto px-6 py-16">
+    <div class="mb-12">
+      <span class="text-xs uppercase tracking-widest text-blue-400 font-bold">Seçili Projeler</span>
+      <h2 class="text-3xl font-bold text-white mt-1">Mühendislik Çalışmaları</h2>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      
+      <!-- Proje 1: AI Security Log Analyzer -->
+      <div class="glass-card rounded-2xl p-7 flex flex-col justify-between">
+        <div>
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span class="text-[11px] font-semibold px-2.5 py-1 rounded-md bg-purple-500/10 text-purple-300 border border-purple-500/20">FASTAPI</span>
+            <span class="text-[11px] font-semibold px-2.5 py-1 rounded-md bg-blue-500/10 text-blue-300 border border-blue-500/20">MACHINE LEARNING</span>
+            <span class="text-[11px] font-semibold px-2.5 py-1 rounded-md bg-emerald-500/10 text-emerald-300 border border-emerald-500/20">LLAMA 3.2</span>
+          </div>
+          <h3 class="text-2xl font-bold text-white mb-3">AI Security Log Analyzer</h3>
+          <p class="text-slate-400 text-sm leading-relaxed mb-6">
+            Ağ ve sistem loglarını anomali tespiti için makine öğrenimi modelleriyle (Isolation Forest) filtreleyen ve LLM tabanlı analiz ile raporlayan açık kaynaklı güvenlik platformu.
+          </p>
+        </div>
+        <div class="pt-4 border-t border-slate-800/80 flex items-center justify-between">
+          <a href="https://github.com/beyzaaemir17/ai-security-log-analyzer" target="_blank" class="text-blue-400 hover:text-blue-300 text-sm font-medium inline-flex items-center gap-1.5 transition">
+            Repoyu Görüntüle <i data-lucide="external-link" class="w-4 h-4"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Proje 2: Görüntü İşleme ile Hedef Atışı -->
+      <div class="glass-card rounded-2xl p-7 flex flex-col justify-between">
+        <div>
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span class="text-[11px] font-semibold px-2.5 py-1 rounded-md bg-blue-500/10 text-blue-300 border border-blue-500/20">PYTHON</span>
+            <span class="text-[11px] font-semibold px-2.5 py-1 rounded-md bg-sky-500/10 text-sky-300 border border-sky-500/20">OPENCV</span>
+            <span class="text-[11px] font-semibold px-2.5 py-1 rounded-md bg-orange-500/10 text-orange-300 border border-orange-500/20">COMPUTER VISION</span>
+          </div>
+          <h3 class="text-2xl font-bold text-white mb-3">Görüntü İşleme ile Hedef Takibi</h3>
+          <p class="text-slate-400 text-sm leading-relaxed mb-6">
+            Kamera üzerinden gerçek zamanlı nesne tespiti, renk ve kontur analizi ile hedef koordinatlarını hesaplayarak yönelim ve tetikleme sağlayan otonom hedefleme sistemi.
+          </p>
+        </div>
+        <div class="pt-4 border-t border-slate-800/80 flex items-center justify-between">
+          <a href="https://github.com/beyzaaemir17/goruntu_isleme_hedef_atisi" target="_blank" class="text-blue-400 hover:text-blue-300 text-sm font-medium inline-flex items-center gap-1.5 transition">
+            Repoyu Görüntüle <i data-lucide="external-link" class="w-4 h-4"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Proje 3: Akıllı Staj Yönetim Sistemi -->
+      <div class="glass-card rounded-2xl p-7 flex flex-col justify-between">
+        <div>
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span class="text-[11px] font-semibold px-2.5 py-1 rounded-md bg-blue-500/10 text-blue-300 border border-blue-500/20">WEB DEV</span>
+            <span class="text-[11px] font-semibold px-2.5 py-1 rounded-md bg-emerald-500/10 text-emerald-300 border border-emerald-500/20">FULL STACK</span>
+            <span class="text-[11px] font-semibold px-2.5 py-1 rounded-md bg-yellow-500/10 text-yellow-300 border border-yellow-500/20">DATABASE</span>
+          </div>
+          <h3 class="text-2xl font-bold text-white mb-3">Akıllı Staj Yönetim Sistemi</h3>
+          <p class="text-slate-400 text-sm leading-relaxed mb-6">
+            Öğrencilerin staj başvuru süreçlerini, evrak teslimlerini ve değerlendirme aşamalarını dijitalleştiren kapsamlı yönetim ve takip otomasyonu.
+          </p>
+        </div>
+        <div class="pt-4 border-t border-slate-800/80 flex items-center justify-between">
+          <a href="https://github.com/beyzaaemir17/akilli_staj_yonetim_sistemi" target="_blank" class="text-blue-400 hover:text-blue-300 text-sm font-medium inline-flex items-center gap-1.5 transition">
+            Repoyu Görüntüle <i data-lucide="external-link" class="w-4 h-4"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Proje 4: Cilt Kanseri Tespiti -->
+      <div class="glass-card rounded-2xl p-7 flex flex-col justify-between">
+        <div>
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span class="text-[11px] font-semibold px-2.5 py-1 rounded-md bg-rose-500/10 text-rose-300 border border-rose-500/20">DEEP LEARNING</span>
+            <span class="text-[11px] font-semibold px-2.5 py-1 rounded-md bg-blue-500/10 text-blue-300 border border-blue-500/20">CNN</span>
+            <span class="text-[11px] font-semibold px-2.5 py-1 rounded-md bg-emerald-500/10 text-emerald-300 border border-emerald-500/20">MEDICAL AI</span>
+          </div>
+          <h3 class="text-2xl font-bold text-white mb-3">Cilt Kanseri Tespiti & Sınıflandırma</h3>
+          <p class="text-slate-400 text-sm leading-relaxed mb-6">
+            Dermatoskopik görüntüler üzerinden derin öğrenme ve evrişimli sinir ağları (CNN) kullanarak lezyonların iyi veya kötü huylu olup olmadığını sınıflandıran medikal yapay zekâ modeli.
+          </p>
+        </div>
+        <div class="pt-4 border-t border-slate-800/80 flex items-center justify-between">
+          <a href="https://github.com/beyzaaemir17/cilt_kanseri" target="_blank" class="text-blue-400 hover:text-blue-300 text-sm font-medium inline-flex items-center gap-1.5 transition">
+            Repoyu Görüntüle <i data-lucide="external-link" class="w-4 h-4"></i>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SKILLS SECTION -->
+  <section id="skills" class="max-w-6xl mx-auto px-6 py-16">
+    <div class="mb-10">
+      <span class="text-xs uppercase tracking-widest text-blue-400 font-bold">Teknik Yetkinlikler</span>
+      <h2 class="text-3xl font-bold text-white mt-1">Araçlar ve Teknolojiler</h2>
+    </div>
+    <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+      <div class="glass-card rounded-xl p-5 text-center">
+        <div class="text-white font-semibold mb-1">Diller</div>
+        <p class="text-slate-400 text-xs">Python, C/C++, Dart, SQL</p>
+      </div>
+      <div class="glass-card rounded-xl p-5 text-center">
+        <div class="text-white font-semibold mb-1">Yapay Zekâ</div>
+        <p class="text-slate-400 text-xs">PyTorch, OpenCV, YOLO, CNN</p>
+      </div>
+      <div class="glass-card rounded-xl p-5 text-center">
+        <div class="text-white font-semibold mb-1">Robotik & Simülasyon</div>
+        <p class="text-slate-400 text-xs">ROS 2, Gazebo, SLAM, PID</p>
+      </div>
+      <div class="glass-card rounded-xl p-5 text-center">
+        <div class="text-white font-semibold mb-1">Yazılım & Çerçeveler</div>
+        <p class="text-slate-400 text-xs">Flutter, FastAPI, Git, Docker</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-slate-800/80 py-10 mt-12">
+    <div class="max-w-6xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
+      <p>© 2026 Beyzanur Emir. Tüm hakları saklıdır.</p>
+      <div class="flex items-center gap-6">
+        <a href="https://github.com/beyzaaemir17" target="_blank" class="hover:text-slate-300 transition">GitHub</a>
+        <a href="mailto:beyzaaemir@gmail.com" class="hover:text-slate-300 transition">İletişim</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>
