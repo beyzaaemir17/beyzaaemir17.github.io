@@ -56,8 +56,8 @@
     </div>
   </nav>
 
-  <!-- HERO / HAKKIMDA BÖLÜMÜ -->
-  <header id="about" class="max-w-6xl mx-auto px-6 pt-24 pb-16">
+  <!-- HERO SECTION -->
+  <header class="max-w-6xl mx-auto px-6 pt-24 pb-12">
     <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-blue-500/10 text-blue-400 border border-blue-500/20 mb-6">
       <span class="w-2 h-2 rounded-full bg-blue-400 animate-pulse"></span> Portfolyo
     </div>
@@ -76,6 +76,83 @@
       </a>
     </div>
   </header>
+
+  <!-- HAKKIMDA BÖLÜMÜ (Sol: Paragraf | Sağ: Bilgi Kartı) -->
+  <section id="about" class="max-w-6xl mx-auto px-6 py-12">
+    <div class="mb-6">
+      <span class="text-xs uppercase tracking-widest text-blue-400 font-bold">Özgeçmiş & Profil</span>
+      <h2 class="text-3xl font-bold text-white mt-1">Hakkımda</h2>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+      
+      <!-- Sol Taraf: Paragraf Alanı (2 Kolon Genişliğinde) -->
+      <div class="lg:col-span-2 glass-card rounded-2xl p-8 sm:p-10 flex flex-col justify-center">
+        <p class="text-slate-300 text-base sm:text-lg leading-relaxed mb-6">
+          23 yaşındayım ve Bursa’da yaşıyorum. Hitit Üniversitesi Bilgisayar Mühendisliği lisans eğitimimi başarıyla tamamladım. Lisans hayatım boyunca teorik bilgiyi sahaya taşımaya odaklanarak otonom sistemler, robotik simülasyonlar ve görüntü işleme çalışmalarının yanı sıra uçtan uca mimariye sahip birçok modern full-stack yazılım projesinde aktif roller üstlendim.
+        </p>
+        <p class="text-slate-300 text-base sm:text-lg leading-relaxed">
+          Bir bilgisayar mühendisi olarak geliştirilen sistemlerin yalnızca işlevsel değil, aynı zamanda siber tehditlere karşı dayanıklı olması gerektiğine inanıyorum. Bu doğrultuda teknolojinin ve veri akışının güvenliğini sağlamak amacıyla siber güvenlik, ağ analizi ve zafiyet tespiti alanlarında kapsamlı eğitimler alarak uygulamalı çalışmalar gerçekleştirdim.
+        </p>
+      </div>
+
+      <!-- Sağ Taraf: İletişim & Bilgi Kartı (1 Kolon Genişliğinde) -->
+      <div class="glass-card rounded-2xl p-8 flex flex-col justify-center space-y-6">
+        <h3 class="text-xl font-bold text-white border-b border-slate-800 pb-3">Kişisel Bilgiler</h3>
+        
+        <!-- Konum -->
+        <div class="flex items-start gap-4">
+          <div class="p-2.5 rounded-xl bg-blue-500/10 text-blue-400 border border-blue-500/20">
+            <i data-lucide="map-pin" class="w-5 h-5"></i>
+          </div>
+          <div>
+            <div class="text-xs text-slate-400 font-medium">Konum</div>
+            <div class="text-sm font-semibold text-white">Bursa, Türkiye</div>
+          </div>
+        </div>
+
+        <!-- Üniversite -->
+        <div class="flex items-start gap-4">
+          <div class="p-2.5 rounded-xl bg-indigo-500/10 text-indigo-400 border border-indigo-500/20">
+            <i data-lucide="graduation-cap" class="w-5 h-5"></i>
+          </div>
+          <div>
+            <div class="text-xs text-slate-400 font-medium">Eğitim</div>
+            <div class="text-sm font-semibold text-white">Hitit Üniversitesi</div>
+            <div class="text-xs text-slate-400">Bilgisayar Mühendisliği</div>
+          </div>
+        </div>
+
+        <!-- E-posta -->
+        <div class="flex items-start gap-4">
+          <div class="p-2.5 rounded-xl bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
+            <i data-lucide="mail" class="w-5 h-5"></i>
+          </div>
+          <div>
+            <div class="text-xs text-slate-400 font-medium">E-posta</div>
+            <a href="mailto:beyzaaemir@gmail.com" class="text-sm font-semibold text-blue-400 hover:underline break-all">
+              beyzaaemir@gmail.com
+            </a>
+          </div>
+        </div>
+
+        <!-- LinkedIn -->
+        <div class="flex items-start gap-4">
+          <div class="p-2.5 rounded-xl bg-sky-500/10 text-sky-400 border border-sky-500/20">
+            <i data-lucide="linkedin" class="w-5 h-5"></i>
+          </div>
+          <div>
+            <div class="text-xs text-slate-400 font-medium">LinkedIn</div>
+            <a href="https://linkedin.com/in/beyzanur-emir" target="_blank" class="text-sm font-semibold text-blue-400 hover:underline">
+              beyzanur-emir
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
 
   <!-- PROJELER BÖLÜMÜ -->
   <section id="projects" class="max-w-6xl mx-auto px-6 py-16">
@@ -181,6 +258,27 @@
         </div>
         <div class="pt-4 border-t border-slate-800/80 flex items-center justify-between">
           <a href="https://github.com/beyzaaemir17/cilt_kanseri" target="_blank" class="text-blue-400 hover:text-blue-300 text-sm font-medium inline-flex items-center gap-1.5 transition">
+            Repoyu Görüntüle <i data-lucide="external-link" class="w-4 h-4"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Proje 6: TEKNOFEST İKA (Otonom Kara Aracı) -->
+      <div class="glass-card rounded-2xl p-7 flex flex-col justify-between">
+        <div>
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span class="text-[11px] font-semibold px-2.5 py-1 rounded-md bg-indigo-500/10 text-indigo-300 border border-indigo-500/20">ROS 2</span>
+            <span class="text-[11px] font-semibold px-2.5 py-1 rounded-md bg-emerald-500/10 text-emerald-300 border border-emerald-500/20">GAZEBO</span>
+            <span class="text-[11px] font-semibold px-2.5 py-1 rounded-md bg-yellow-500/10 text-yellow-300 border border-yellow-500/20">YOLO</span>
+            <span class="text-[11px] font-semibold px-2.5 py-1 rounded-md bg-blue-500/10 text-blue-300 border border-blue-500/20">AUTONOMOUS</span>
+          </div>
+          <h3 class="text-2xl font-bold text-white mb-3">TEKNOFEST İnsansız Kara Aracı (İKA)</h3>
+          <p class="text-slate-400 text-sm leading-relaxed mb-6">
+            2025–2026 TEKNOFEST yarışması kapsamında aracın ve çevresinin Gazebo ile simülasyon ortamının tasarlanması, ROS 2 haberleşme mimarisi ile bileşenlerin entegrasyonu ve YOLO algoritması ile gerçek zamanlı nesne tespiti/takibi görevleri geliştirildi.
+          </p>
+        </div>
+        <div class="pt-4 border-t border-slate-800/80 flex items-center justify-between">
+          <a href="https://github.com/beyzaaemir17" target="_blank" class="text-blue-400 hover:text-blue-300 text-sm font-medium inline-flex items-center gap-1.5 transition">
             Repoyu Görüntüle <i data-lucide="external-link" class="w-4 h-4"></i>
           </a>
         </div>
