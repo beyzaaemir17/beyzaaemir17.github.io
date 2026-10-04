@@ -51,6 +51,7 @@
       <!-- Menü Linkleri -->
       <div class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-300">
         <a href="#about" class="hover:text-blue-400 transition">HAKKIMDA</a>
+        <a href="#experience" class="hover:text-blue-400 transition">DENEYİM</a>
         <a href="#projects" class="hover:text-blue-400 transition">PROJELER</a>
         <a href="#skills" class="hover:text-blue-400 transition">YETENEKLER</a>
         <a href="#certificates" class="hover:text-blue-400 transition">SERTİFİKALAR</a>
@@ -59,7 +60,7 @@
     </div>
   </nav>
 
-  <!-- HERO SECTION (Sol: Bilgiler & Butonlar | Sağ: Profil Fotoğrafı) -->
+  <!-- HERO SECTION -->
   <header class="max-w-6xl mx-auto px-6 pt-20 pb-12">
     <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
       
@@ -81,12 +82,16 @@
           Bilgisayar mühendisliği alanında aldığım eğitimle; yapay zekâ, otonom sistemler ve yazılım geliştirme konularında güçlü bir teknik birikime sahibim. Analitik düşünme ve problem çözme yeteneğimle, yenilikçi projelerde ve ArGe çalışmalarında aktif rol aldım. Takım çalışmasına yatkın, sürekli öğrenmeye açık bir mühendis olarak, teknik becerilerimi uygulayıp geliştirebileceğim yeni kariyer fırsatları arıyorum.
         </p>
 
+        <!-- Eylem Butonları -->
         <div class="flex flex-wrap items-center gap-4">
           <a href="https://github.com/beyzaaemir17" target="_blank" class="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-slate-800 hover:bg-slate-700 text-white font-medium transition border border-slate-700">
             <i data-lucide="github" class="w-5 h-5"></i> GitHub Profili
           </a>
           <a href="#projects" class="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-medium transition shadow-lg shadow-blue-500/20">
             Projeleri İncele <i data-lucide="arrow-down" class="w-4 h-4"></i>
+          </a>
+          <a href="Beyzanur Emir - CV 2026-09-02 (3).pdf" target="_blank" class="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-slate-900/90 hover:bg-slate-800 text-blue-400 hover:text-white font-medium transition border border-blue-500/30">
+            <i data-lucide="file-text" class="w-5 h-5"></i> CV İndir
           </a>
         </div>
       </div>
@@ -106,10 +111,30 @@
       </div>
 
     </div>
+
+    <!-- METRİK ŞERİDİ (Mini Sayaçlar) -->
+    <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-12 pt-8 border-t border-slate-800/80">
+      <div class="glass-card rounded-2xl p-5 text-center">
+        <div class="text-3xl font-extrabold text-blue-400 mb-1">6+</div>
+        <div class="text-xs text-slate-400 font-medium uppercase tracking-wider">Mühendislik Projesi</div>
+      </div>
+      <div class="glass-card rounded-2xl p-5 text-center">
+        <div class="text-3xl font-extrabold text-indigo-400 mb-1">TEKNOFEST</div>
+        <div class="text-xs text-slate-400 font-medium uppercase tracking-wider">İKA Robotik Takımı</div>
+      </div>
+      <div class="glass-card rounded-2xl p-5 text-center">
+        <div class="text-3xl font-extrabold text-purple-400 mb-1">10+</div>
+        <div class="text-xs text-slate-400 font-medium uppercase tracking-wider">Teknik Sertifika</div>
+      </div>
+      <div class="glass-card rounded-2xl p-5 text-center">
+        <div class="text-3xl font-extrabold text-emerald-400 mb-1">Lisans</div>
+        <div class="text-xs text-slate-400 font-medium uppercase tracking-wider">Hitit Bilgisayar Müh.</div>
+      </div>
+    </div>
   </header>
 
   <!-- HAKKIMDA BÖLÜMÜ -->
-  <section id="about" class="max-w-6xl mx-auto px-6 py-12">
+  <section id="about" class="scroll-mt-24 max-w-6xl mx-auto px-6 py-12">
     <div class="mb-6">
       <span class="text-xs uppercase tracking-widest text-blue-400 font-bold">Özgeçmiş & Profil</span>
       <h2 class="text-3xl font-bold text-white mt-1">Hakkımda</h2>
@@ -187,8 +212,54 @@
     </div>
   </section>
 
+  <!-- DENEYİM & EĞİTİM ZAMAN ÇİZELGESİ (TIMELINE) -->
+  <section id="experience" class="scroll-mt-24 max-w-6xl mx-auto px-6 py-12">
+    <div class="mb-10">
+      <span class="text-xs uppercase tracking-widest text-blue-400 font-bold">Kariyer & Yol Haritası</span>
+      <h2 class="text-3xl font-bold text-white mt-1">Eğitim ve Deneyim</h2>
+    </div>
+
+    <div class="glass-card rounded-3xl p-8 sm:p-10">
+      <div class="relative border-l-2 border-slate-800 ml-3 sm:ml-4 space-y-10">
+        
+        <!-- Aşama 1 -->
+        <div class="relative pl-8 sm:pl-10">
+          <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-blue-500 border-4 border-[#0b0f19]"></div>
+          <span class="text-xs font-semibold px-2.5 py-1 rounded-md bg-blue-500/10 text-blue-400 border border-blue-500/20">2026</span>
+          <h4 class="text-lg font-bold text-white mt-2">Açık Kaynak AI & Güvenlik Projeleri</h4>
+          <p class="text-slate-400 text-sm mt-1">FastAPI, Llama 3.2 ve Isolation Forest mimarileriyle yapay zekâ destekli log analiz platformu geliştirme ve açık kaynak yayınlama.</p>
+        </div>
+
+        <!-- Aşama 2 -->
+        <div class="relative pl-8 sm:pl-10">
+          <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-indigo-500 border-4 border-[#0b0f19]"></div>
+          <span class="text-xs font-semibold px-2.5 py-1 rounded-md bg-indigo-500/10 text-indigo-400 border border-indigo-500/20">2025 – 2026</span>
+          <h4 class="text-lg font-bold text-white mt-2">TEKNOFEST İnsansız Kara Aracı (İKA) Geliştirici</h4>
+          <p class="text-slate-400 text-sm mt-1">Otonom sürüş simülasyonu, Gazebo ve ROS 2 düğüm entegrasyonu ile YOLOv8 tabanlı gerçek zamanlı engel ve hedef takibi.</p>
+        </div>
+
+        <!-- Aşama 3 -->
+        <div class="relative pl-8 sm:pl-10">
+          <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-purple-500 border-4 border-[#0b0f19]"></div>
+          <span class="text-xs font-semibold px-2.5 py-1 rounded-md bg-purple-500/10 text-purple-400 border border-purple-500/20">2026</span>
+          <h4 class="text-lg font-bold text-white mt-2">Mobil Uygulama & OCR Bitirme Projesi (APİS)</h4>
+          <p class="text-slate-400 text-sm mt-1">Flutter, Google ML Kit OCR ve Firebase ile paketli gıda etiketlerini tarayarak içerik/alerjen analizi yapan mobil sistem tasarımı.</p>
+        </div>
+
+        <!-- Aşama 4 -->
+        <div class="relative pl-8 sm:pl-10">
+          <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-emerald-500 border-4 border-[#0b0f19]"></div>
+          <span class="text-xs font-semibold px-2.5 py-1 rounded-md bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">2022 – 2026</span>
+          <h4 class="text-lg font-bold text-white mt-2">Hitit Üniversitesi — Bilgisayar Mühendisliği (Lisans)</h4>
+          <p class="text-slate-400 text-sm mt-1">Otonom sistemler, görüntü işleme, yapay zekâ ve tam kapsamlı yazılım mimarileri odaklı mühendislik lisans eğitimi.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
   <!-- PROJELER BÖLÜMÜ -->
-  <section id="projects" class="max-w-6xl mx-auto px-6 py-16">
+  <section id="projects" class="scroll-mt-24 max-w-6xl mx-auto px-6 py-16">
     <div class="mb-12">
       <span class="text-xs uppercase tracking-widest text-blue-400 font-bold">Seçili Projeler</span>
       <h2 class="text-3xl font-bold text-white mt-1">Mühendislik Çalışmaları</h2>
@@ -321,7 +392,7 @@
   </section>
 
   <!-- YETENEKLER BÖLÜMÜ -->
-  <section id="skills" class="max-w-6xl mx-auto px-6 py-16">
+  <section id="skills" class="scroll-mt-24 max-w-6xl mx-auto px-6 py-16">
     <div class="mb-10">
       <span class="text-xs uppercase tracking-widest text-blue-400 font-bold">Teknik Yetkinlikler</span>
       <h2 class="text-3xl font-bold text-white mt-1">Araçlar ve Teknolojiler</h2>
@@ -352,7 +423,7 @@
   </section>
 
   <!-- SERTİFİKALAR BÖLÜMÜ -->
-  <section id="certificates" class="max-w-6xl mx-auto px-6 py-16">
+  <section id="certificates" class="scroll-mt-24 max-w-6xl mx-auto px-6 py-16">
     <div class="mb-10">
       <span class="text-xs uppercase tracking-widest text-blue-400 font-bold">Eğitim & Başarılar</span>
       <h2 class="text-3xl font-bold text-white mt-1">Sertifikalar ve Belgeler</h2>
@@ -454,7 +525,7 @@
   </section>
 
   <!-- İLETİŞİM KARTI BÖLÜMÜ -->
-  <section id="contact" class="max-w-6xl mx-auto px-6 py-16">
+  <section id="contact" class="scroll-mt-24 max-w-6xl mx-auto px-6 py-16">
     <div class="mb-10 text-center sm:text-left">
       <span class="text-xs uppercase tracking-widest text-blue-400 font-bold">Birlikte Çalışalım</span>
       <h2 class="text-3xl font-bold text-white mt-1">İletişime Geçin</h2>
