@@ -35,6 +35,9 @@
       transform: translateY(-2px);
       color: #93c5fd;
     }
+    .avatar-glow {
+      box-shadow: 0 0 50px -10px rgba(59, 130, 246, 0.4);
+    }
   </style>
 </head>
 <body class="min-h-screen flex flex-col justify-between">
@@ -51,41 +54,61 @@
         <a href="#projects" class="hover:text-blue-400 transition">PROJELER</a>
         <a href="#skills" class="hover:text-blue-400 transition">YETENEKLER</a>
         <a href="#certificates" class="hover:text-blue-400 transition">SERTİFİKALAR</a>
-        <a href="mailto:beyzaaemir@gmail.com" class="bg-blue-600 hover:bg-blue-500 text-white px-5 py-2.5 rounded-xl font-medium transition shadow-lg shadow-blue-500/20">İletişime Geç</a>
+        <a href="#contact" class="bg-blue-600 hover:bg-blue-500 text-white px-5 py-2.5 rounded-xl font-medium transition shadow-lg shadow-blue-500/20">İletişime Geç</a>
       </div>
     </div>
   </nav>
 
-  <!-- HERO SECTION -->
-  <header class="max-w-6xl mx-auto px-6 pt-24 pb-12">
-    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-blue-500/10 text-blue-400 border border-blue-500/20 mb-6">
-      <span class="w-2 h-2 rounded-full bg-blue-400 animate-pulse"></span> Portfolyo
-    </div>
-    
-    <!-- Ana Başlık -->
-    <h1 class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight mb-3">
-      BEYZANUR EMİR | <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-indigo-300 to-purple-400">BİLGİSAYAR MÜHENDİSİ</span>
-    </h1>
+  <!-- HERO SECTION (Sol: Bilgiler & Butonlar | Sağ: Profil Fotoğrafı) -->
+  <header class="max-w-6xl mx-auto px-6 pt-20 pb-12">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+      
+      <!-- Sol Taraf -->
+      <div class="lg:col-span-8 order-2 lg:order-1">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-blue-500/10 text-blue-400 border border-blue-500/20 mb-6">
+          <span class="w-2 h-2 rounded-full bg-blue-400 animate-pulse"></span> Portfolyo
+        </div>
+        
+        <h1 class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight mb-3">
+          BEYZANUR EMİR | <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-indigo-300 to-purple-400">BİLGİSAYAR MÜHENDİSİ</span>
+        </h1>
 
-    <!-- Küçük Alt Başlık -->
-    <div class="text-xs sm:text-sm font-semibold tracking-wider text-blue-400 mb-6 uppercase">
-      LLM DEVELOPER &nbsp;|&nbsp; PYTHON DEVELOPER &nbsp;|&nbsp; COMPUTER VISION &nbsp;|&nbsp; CYBER SECURITY
-    </div>
+        <div class="text-xs sm:text-sm font-semibold tracking-wider text-blue-400 mb-6 uppercase">
+          LLM DEVELOPER &nbsp;|&nbsp; PYTHON DEVELOPER &nbsp;|&nbsp; COMPUTER VISION &nbsp;|&nbsp; CYBER SECURITY
+        </div>
 
-    <p class="max-w-3xl text-base sm:text-lg text-slate-300 leading-relaxed mb-8">
-      Bilgisayar mühendisliği alanında aldığım eğitimle; yapay zekâ, otonom sistemler ve yazılım geliştirme konularında güçlü bir teknik birikime sahibim. Analitik düşünme ve problem çözme yeteneğimle, yenilikçi projelerde ve ArGe çalışmalarında aktif rol aldım. Takım çalışmasına yatkın, sürekli öğrenmeye açık bir mühendis olarak, teknik becerilerimi uygulayıp geliştirebileceğim yeni kariyer fırsatları arıyorum.
-    </p>
-    <div class="flex flex-wrap items-center gap-4">
-      <a href="https://github.com/beyzaaemir17" target="_blank" class="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-slate-800 hover:bg-slate-700 text-white font-medium transition border border-slate-700">
-        <i data-lucide="github" class="w-5 h-5"></i> GitHub Profili
-      </a>
-      <a href="#projects" class="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-medium transition shadow-lg shadow-blue-500/20">
-        Projeleri İncele <i data-lucide="arrow-down" class="w-4 h-4"></i>
-      </a>
+        <p class="max-w-2xl text-base sm:text-lg text-slate-300 leading-relaxed mb-8">
+          Bilgisayar mühendisliği alanında aldığım eğitimle; yapay zekâ, otonom sistemler ve yazılım geliştirme konularında güçlü bir teknik birikime sahibim. Analitik düşünme ve problem çözme yeteneğimle, yenilikçi projelerde ve ArGe çalışmalarında aktif rol aldım. Takım çalışmasına yatkın, sürekli öğrenmeye açık bir mühendis olarak, teknik becerilerimi uygulayıp geliştirebileceğim yeni kariyer fırsatları arıyorum.
+        </p>
+
+        <div class="flex flex-wrap items-center gap-4">
+          <a href="https://github.com/beyzaaemir17" target="_blank" class="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-slate-800 hover:bg-slate-700 text-white font-medium transition border border-slate-700">
+            <i data-lucide="github" class="w-5 h-5"></i> GitHub Profili
+          </a>
+          <a href="#projects" class="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-medium transition shadow-lg shadow-blue-500/20">
+            Projeleri İncele <i data-lucide="arrow-down" class="w-4 h-4"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Sağ Taraf: Profil Fotoğrafı (github.jpg) -->
+      <div class="lg:col-span-4 order-1 lg:order-2 flex justify-center">
+        <div class="relative group">
+          <div class="w-56 h-56 sm:w-64 sm:h-64 rounded-3xl p-1.5 bg-gradient-to-tr from-blue-500 via-indigo-500 to-purple-500 avatar-glow transition-transform duration-300 group-hover:scale-105">
+            <img 
+              src="github.jpg" 
+              alt="Beyzanur Emir" 
+              class="w-full h-full object-cover rounded-[22px] bg-slate-900"
+              onerror="this.onerror=null; this.src='https://github.com/beyzaaemir17.png';" 
+            />
+          </div>
+        </div>
+      </div>
+
     </div>
   </header>
 
-  <!-- HAKKIMDA BÖLÜMÜ (Sol: Paragraf | Sağ: Bilgi Kartı) -->
+  <!-- HAKKIMDA BÖLÜMÜ -->
   <section id="about" class="max-w-6xl mx-auto px-6 py-12">
     <div class="mb-6">
       <span class="text-xs uppercase tracking-widest text-blue-400 font-bold">Özgeçmiş & Profil</span>
@@ -94,7 +117,7 @@
 
     <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
       
-      <!-- Sol Taraf: Paragraf Alanı (2 Kolon Genişliğinde) -->
+      <!-- Sol Taraf: Paragraf -->
       <div class="lg:col-span-2 glass-card rounded-2xl p-8 sm:p-10 flex flex-col justify-center">
         <p class="text-slate-300 text-base sm:text-lg leading-relaxed mb-6">
           23 yaşındayım ve Bursa’da yaşıyorum. Hitit Üniversitesi Bilgisayar Mühendisliği lisans eğitimimi başarıyla tamamladım. Lisans hayatım boyunca teorik bilgiyi sahaya taşımaya odaklanarak otonom sistemler, robotik simülasyonlar ve görüntü işleme çalışmalarının yanı sıra uçtan uca mimariye sahip birçok modern full-stack yazılım projesinde aktif roller üstlendim.
@@ -104,7 +127,7 @@
         </p>
       </div>
 
-      <!-- Sağ Taraf: İletişim & Bilgi Kartı (1 Kolon Genişliğinde) -->
+      <!-- Sağ Taraf: Kişisel Bilgi Kartı -->
       <div class="glass-card rounded-2xl p-8 flex flex-col justify-center space-y-6">
         <h3 class="text-xl font-bold text-white border-b border-slate-800 pb-3">Kişisel Bilgiler</h3>
         
@@ -139,13 +162,13 @@
           <div>
             <div class="text-xs text-slate-400 font-medium">E-posta</div>
             <a href="mailto:beyzaaemir@gmail.com" class="text-sm font-semibold text-blue-400 hover:underline break-all">
-              emir.beyzanur16@gmail.com
+              beyzaaemir@gmail.com
             </a>
           </div>
         </div>
 
-        <!-- LinkedIn (SVG İkonlu ve Tıklanabilir Bağlantı) -->
-        <a href="https://www.linkedin.com/in/beyzanur-emir-b40b012b3/" target="_blank" class="flex items-start gap-4 group p-2 -m-2 rounded-xl hover:bg-slate-800/40 transition">
+        <!-- LinkedIn -->
+        <a href="https://www.linkedin.com/in/beyzanur-emir/" target="_blank" class="flex items-start gap-4 group p-2 -m-2 rounded-xl hover:bg-slate-800/40 transition">
           <div class="p-2.5 rounded-xl bg-blue-500/10 text-blue-400 border border-blue-500/20 group-hover:bg-blue-500/20 transition flex items-center justify-center">
             <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
               <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.25c-.91 0-1.64.73-1.64 1.64s.73 1.64 1.64 1.64 1.64-.73 1.64-1.64-.73-1.64-1.64-1.64Z"/>
@@ -173,7 +196,7 @@
 
     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
       
-      <!-- Proje 1: Multipass Destekli Sanal Makine Yönetimi -->
+      <!-- Proje 1 -->
       <div class="glass-card rounded-2xl p-7 flex flex-col justify-between">
         <div>
           <div class="flex flex-wrap gap-2 mb-4">
@@ -193,7 +216,7 @@
         </div>
       </div>
 
-      <!-- Proje 2: AI Security Log Analyzer -->
+      <!-- Proje 2 -->
       <div class="glass-card rounded-2xl p-7 flex flex-col justify-between">
         <div>
           <div class="flex flex-wrap gap-2 mb-4">
@@ -213,7 +236,7 @@
         </div>
       </div>
 
-      <!-- Proje 3: Paketli Gıda Analizi (OCR & ML) -->
+      <!-- Proje 3 -->
       <div class="glass-card rounded-2xl p-7 flex flex-col justify-between">
         <div>
           <div class="flex flex-wrap gap-2 mb-4">
@@ -233,7 +256,7 @@
         </div>
       </div>
 
-      <!-- Proje 4: Akıllı Staj Yönetim Sistemi -->
+      <!-- Proje 4 -->
       <div class="glass-card rounded-2xl p-7 flex flex-col justify-between">
         <div>
           <div class="flex flex-wrap gap-2 mb-4">
@@ -253,8 +276,8 @@
         </div>
       </div>
 
-      <!-- Proje 5: Cilt Kanseri Tespiti -->
-      <div class="glass-card rounded-2xl p-7 flex flex-col justify-between">
+      <!-- Proje 5 -->
+      <div class="glass-card rounded-2xl p-7 flex flex-col justify-between md:col-span-2">
         <div>
           <div class="flex flex-wrap gap-2 mb-4">
             <span class="text-[11px] font-semibold px-2.5 py-1 rounded-md bg-rose-500/10 text-rose-300 border border-rose-500/20">DEEP LEARNING</span>
@@ -273,7 +296,7 @@
         </div>
       </div>
 
-      <!-- Proje 6: TEKNOFEST İKA (Otonom Kara Aracı) -->
+      <!-- Proje 6 -->
       <div class="glass-card rounded-2xl p-7 flex flex-col justify-between">
         <div>
           <div class="flex flex-wrap gap-2 mb-4">
@@ -304,7 +327,6 @@
       <h2 class="text-3xl font-bold text-white mt-1">Araçlar ve Teknolojiler</h2>
     </div>
 
-    <!-- Yetenek Etiketleri Vitrini -->
     <div class="glass-card rounded-2xl p-8">
       <div class="flex flex-wrap gap-3">
         <span class="skill-tag px-4 py-2 rounded-xl text-sm font-medium text-slate-200">Flutter</span>
@@ -431,14 +453,108 @@
     </div>
   </section>
 
+  <!-- İLETİŞİM KARTI BÖLÜMÜ -->
+  <section id="contact" class="max-w-6xl mx-auto px-6 py-16">
+    <div class="mb-10 text-center sm:text-left">
+      <span class="text-xs uppercase tracking-widest text-blue-400 font-bold">Birlikte Çalışalım</span>
+      <h2 class="text-3xl font-bold text-white mt-1">İletişime Geçin</h2>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+      
+      <!-- Sol: Bilgi & Hızlı İletişim Kartı -->
+      <div class="lg:col-span-5 glass-card rounded-3xl p-8 flex flex-col justify-between">
+        <div>
+          <h3 class="text-2xl font-bold text-white mb-3">Bir Projeniz mi Var?</h3>
+          <p class="text-slate-400 text-sm leading-relaxed mb-8">
+            Yapay zekâ modelleri, otonom sistemler veya tam kapsamlı yazılım geliştirme projeleriniz için iş birliklerine ve kariyer fırsatlarına açığım. Aşağıdaki kanallardan veya formu doldurarak hemen mesaj bırakabilirsiniz.
+          </p>
+
+          <div class="space-y-4">
+            <!-- Mail Kartı -->
+            <a href="mailto:beyzaaemir@gmail.com" class="flex items-center gap-4 p-4 rounded-2xl bg-slate-900/60 border border-slate-800 hover:border-blue-500/50 transition group">
+              <div class="p-3 rounded-xl bg-blue-500/10 text-blue-400 group-hover:bg-blue-500/20 transition">
+                <i data-lucide="mail" class="w-5 h-5"></i>
+              </div>
+              <div class="overflow-hidden">
+                <div class="text-xs text-slate-400">Doğrudan E-posta</div>
+                <div class="text-sm font-semibold text-white group-hover:text-blue-400 transition truncate">beyzaaemir@gmail.com</div>
+              </div>
+            </a>
+
+            <!-- LinkedIn Kartı -->
+            <a href="https://www.linkedin.com/in/beyzanur-emir/" target="_blank" class="flex items-center gap-4 p-4 rounded-2xl bg-slate-900/60 border border-slate-800 hover:border-blue-500/50 transition group">
+              <div class="p-3 rounded-xl bg-blue-500/10 text-blue-400 group-hover:bg-blue-500/20 transition">
+                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                  <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.2V10.9H6.46M7.83 6.25c-.91 0-1.64.73-1.64 1.64s.73 1.64 1.64 1.64 1.64-.73 1.64-1.64-.73-1.64-1.64-1.64Z"/>
+                </svg>
+              </div>
+              <div>
+                <div class="text-xs text-slate-400">LinkedIn Ağı</div>
+                <div class="text-sm font-semibold text-white group-hover:text-blue-400 transition">linkedin.com/in/beyzanur-emir</div>
+              </div>
+            </a>
+
+            <!-- Konum Bilgisi -->
+            <div class="flex items-center gap-4 p-4 rounded-2xl bg-slate-900/60 border border-slate-800">
+              <div class="p-3 rounded-xl bg-emerald-500/10 text-emerald-400">
+                <i data-lucide="map-pin" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <div class="text-xs text-slate-400">Konum</div>
+                <div class="text-sm font-semibold text-white">Bursa, Türkiye</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-8 pt-6 border-t border-slate-800/80 text-xs text-slate-500">
+          En geç 24 saat içinde geri dönüş sağlamaktayım.
+        </div>
+      </div>
+
+      <!-- Sağ: Mesaj Gönderme Form Kartı -->
+      <div class="lg:col-span-7 glass-card rounded-3xl p-8 sm:p-10">
+        <form action="https://formspree.io/f/xbjnbqko" method="POST" class="space-y-5">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+            <div>
+              <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Adınız Soyadınız</label>
+              <input type="text" name="name" required placeholder="Örn: Ahmet Yılmaz" class="w-full px-4 py-3 rounded-xl bg-slate-900/80 border border-slate-800 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-blue-500 transition">
+            </div>
+            <div>
+              <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">E-posta Adresiniz</label>
+              <input type="email" name="email" required placeholder="ornek@sirket.com" class="w-full px-4 py-3 rounded-xl bg-slate-900/80 border border-slate-800 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-blue-500 transition">
+            </div>
+          </div>
+
+          <div>
+            <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Konu</label>
+            <input type="text" name="subject" required placeholder="İş Birliği / Proje / Kariyer Fırsatı" class="w-full px-4 py-3 rounded-xl bg-slate-900/80 border border-slate-800 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-blue-500 transition">
+          </div>
+
+          <div>
+            <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Mesajınız</label>
+            <textarea name="message" rows="4" required placeholder="Projeniz veya mesajınız hakkında detay verin..." class="w-full px-4 py-3 rounded-xl bg-slate-900/80 border border-slate-800 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-blue-500 transition resize-none"></textarea>
+          </div>
+
+          <button type="submit" class="w-full sm:w-auto px-8 py-3.5 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-medium text-sm transition shadow-lg shadow-blue-500/25 inline-flex items-center justify-center gap-2">
+            <span>Mesajı Gönder</span>
+            <i data-lucide="send" class="w-4 h-4"></i>
+          </button>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
   <!-- FOOTER -->
-  <footer class="border-t border-slate-800/80 py-10 mt-12">
+  <footer class="border-t border-slate-800/80 py-10 mt-6">
     <div class="max-w-6xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
       <p>© 2026 Beyzanur Emir. Tüm hakları saklıdır.</p>
       <div class="flex items-center gap-6">
         <a href="https://github.com/beyzaaemir17" target="_blank" class="hover:text-slate-300 transition">GitHub</a>
         <a href="https://www.linkedin.com/in/beyzanur-emir/" target="_blank" class="hover:text-slate-300 transition">LinkedIn</a>
-        <a href="mailto:beyzaaemir@gmail.com" class="hover:text-slate-300 transition">İletişim</a>
+        <a href="mailto:beyzaaemir@gmail.com" class="hover:text-slate-300 transition">E-posta</a>
       </div>
     </div>
   </footer>
